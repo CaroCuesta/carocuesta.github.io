@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -12,25 +12,25 @@
 <body>
     <header>
         <div>
-            <nav>
-                <div class="topnav" id="myTopnav">
-                    <a href="index.html"><img src="images/logo.svg" alt="Logo BocaAbajo" id="logo"></a>
-                    <a href="index.html#nuestrapropuesta" class="active">Nosotros</a>
-                    <a href="experiencias.html">Experiencias</a>
-                    <a href="index.html#formulario">Contacto</a>
-                    <a href="index.html#reservas">Reservas</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>            
-     </nav>
+        </div>
+        <nav>
+            <ul class="texto-nav">
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="experiencias.html">EXPERIENCIAS</a></li>
+                <li><img src="images/logo.svg" alt="Logo BocaAbajo" id="logo"></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="reservas.html">RESERVAS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
         <article class="principal">
             <div>
                 <img src="images/banner-principal.jpg" alt="" class="bannerprincipal">
             </div>
         </article>
         <section>
-            <section id="nuestrapropuesta" class="banner-secundario4">
+            <section class="banner-secundario4">
                 <div class="container1">
                     <h1>Nuestra Propuesta: 
                         <br>Boca Abajo es nuestro sótano de experiencias. Una cocina abierta que recibe a distintos cocineros y se transforma en un restaurante secreto de no más de veinte cubiertos. Convirtiéndolo en una experiencia única.
@@ -48,45 +48,44 @@
                 <img src="images/4.JPG">
             </div>
         </div>
-        <div>
-            <article>
-                <div id="reservas" class="center-button">
-                    <img src="images/calendar.svg" class="images-calendar">
-                    <div class="caja2">Próximos Eventos</div>
-                    <a href="https://bocabajo.meitre.com/" target="_blank" class="boton1 botondetalle">VER MÁS</a>
-            </article>
-        </div>
-    <div id="contacto">
+    </section>
+    <div>
+        <article>
+            <img src="images/calendar.svg" class="images-calendar">   
+            <div class="caja2">Próximos Eventos</div>
+            <br><br><br><br>
+        </article> 
+    </div>
     <div class="contactform">
         <br> <br>
         <form action="action_page.php" id="formulario">
             <label for="fname">Nombre</label>
-            <input type="text" id="fname" name="firstname" placeholder="Nombre" class="form-button" >
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
         
-            <label for="lname">E-mail</label>
-            <input type="email" id="lname" name="lastname" placeholder="E-mail" class="form-button">
+            <label for="lname">Email</label>
+            <input type="email" id="lname" name="lastname" placeholder="Your last name..">
         
             <label for="country">Motivo</label>
             <br>
             <select id="country" name="country">
                 <option value="australia">Regalo</option>
                 <option value="canada">Aniversario</option>
-                <option value="usa">Cumpleaños</option>
                 <option value="usa">Otros</option>
             </select>
             <br>
-            <label for="subject">Mensaje</label>
-            <textarea id="subject" name="subject" placeholder="Dejanos tu mensaje.." style="height:200px"></textarea>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
         
-            <input class="button2" type="submit"><Enviar mensaje></Enviar Mensaje>
+            <input type="submit" value="Submit">
         </form>
     </div>
 
     <div class="row primary">
         <div class="column about">
-          <h3>Conectate</h3>
+          <h3>Connect</h3>
           <p>
             <i class="fa fa-map-marker" aria-hidden="true"></i>
+            Sienna Towers, Service Road, Bangalore
           </p>
           <div class="social">
             <i class="fa fa-facebook-square"></i>
@@ -109,8 +108,8 @@
         <div class="column subscribe">
           <h3>Newsletter</h3>
           <div>
-            <input type="email" placeholder="E - MAIL" class="inputbutton" />
-            <button class="button3">SUSCBRIBIRME</button>
+            <input type="email" placeholder="E - MAIL" />
+            <button>SUSBRIBIRME</button>
           </div>
         </div>
       </div>
@@ -121,17 +120,27 @@
   <a href="">Cookies Policy</a>
   <a href="">Terms Of Service</a>
   <a href="">Support</a>
+
   </div>
-   <p>Copyright &copy; 2023</p>
+   <p>Copyright &copy; 2022</p>
 </div>
-<script type="text/javascript">
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else { 
-            x.className = "topnav";
+
+    
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("menu_bar");
+            if (x.className === "barratop") {
+                x.className += " responsive";
+            } else { 
+                x.className = "barratop";
+            }
         }
-    }
-</script>
+    </script>
+</body>
 </html>
+
+
+
+
+
+
